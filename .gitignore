@@ -1,0 +1,10 @@
+# 本机配置与运行产物（含账号信息与聊天证据，勿上传）
+config.json
+config.json.bak
+evidence/
+
+# 系统与编辑器杂项
+Thumbs.db
+Desktop.ini
+*.log
+*.tmp

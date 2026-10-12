@@ -1,0 +1,49 @@
+{
+  "frameworkRoot": "auto",
+  "evidence": {
+    "dir": "evidence",
+    "keepLatestAliases": true,
+    "writeAudit": true,
+    "auditIncludeMessageText": true
+  },
+  "timeouts": {
+    "defaultSec": 30,
+    "searchResultsMs": 12000,
+    "switchHeaderMs": 10000,
+    "afterFocusMs": 350,
+    "afterTypeMs": 1000,
+    "afterSendMs": 3000,
+    "settleMs": 300
+  },
+  "dpi": {
+    "mode": "auto",
+    "scale": 1.5
+  },
+  "a11y": {
+    "minNodes": 100,
+    "nodeCountTimeoutMs": 8000
+  },
+  "typing": {
+    "engine": "sendinput",
+    "delayMs": 12
+  },
+  "instances": {
+    "minWindowWidth": 400,
+    "ignorePids": []
+  },
+  "accounts": [
+    {
+      "alias": "Bot",
+      "nick": "机器人昵称",
+      "qqId": "123456789",
+      "enabled": true,
+      "note": ""
+    }
+  ],
+  "defaultAccount": "Bot",
+  "guards": {
+    "requireAccountMatch": false,
+    "minSendIntervalMs": 10000
+  },
+  "qqPath": "D:\\QQ\\QQ.exe"
+}
