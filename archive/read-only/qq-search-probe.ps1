@@ -1,6 +1,6 @@
 # Probe QQ's comprehensive-search panel. Opens the panel and dumps structure. Never types a message.
 param([string]$TargetId = '987654321', [switch]$DoEnterSearch, [switch]$ClickSearchRow)
-. 'G:\deepseek-harness\workplace\qq-uia\qq-lib.ps1'
+. "$PSScriptRoot\qq-lib.ps1"
 Add-Type -AssemblyName System.Windows.Forms
 
 $w = Get-QqWindows | Sort-Object W -Descending | Select-Object -First 1

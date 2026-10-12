@@ -29,8 +29,8 @@ function Measure-QqInstance {
   Write-Host "`n==================== $Label ====================" -ForegroundColor Magenta
   Write-Host ("switch: '{0}'" -f $Switch)
 
-  if ($Switch) { [void](Start-Process -FilePath 'D:\QQ\QQ.exe' -ArgumentList @($Switch) -PassThru) }
-  else { [void](Start-Process -FilePath 'D:\QQ\QQ.exe' -PassThru) }
+  if ($Switch) { [void](Start-Process -FilePath 'C:\Program Files\Tencent\QQNT\QQ.exe' -ArgumentList @($Switch) -PassThru) }
+  else { [void](Start-Process -FilePath 'C:\Program Files\Tencent\QQNT\QQ.exe' -PassThru) }
 
   $newPids = @()
   $deadline = (Get-Date).AddSeconds(100)

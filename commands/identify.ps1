@@ -1,6 +1,6 @@
 # =============================================================================
 # commands/identify.ps1 - L0 account enumeration.
-# Authority: G:\work\FRAMEWORK-DESIGN.md 4.2; G:\work\AGENT-MANUAL.md 4.3
+# Authority: docs/FRAMEWORK-DESIGN.md 4.2; docs/AGENT-MANUAL.md 4.3
 #
 # This is the source of every valid -SenderPid. The manual forbids reusing a pid
 # from an earlier session, guessing one, or picking "the largest window", because

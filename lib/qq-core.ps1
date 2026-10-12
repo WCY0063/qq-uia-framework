@@ -1,7 +1,7 @@
 # =============================================================================
 # qq-core.ps1 - UIA enumeration, locating, DPI conversion, focus, waiting,
 #               keyboard injection, screenshots, and message parsing.
-# Authority: G:\work\FRAMEWORK-DESIGN.md section 3 (core layer)
+# Authority: docs/FRAMEWORK-DESIGN.md section 3 (core layer)
 # Origin: hardened from qq-uia\scripts\qq-lib.ps1
 #
 # Hard rules encoded here (each one was a real defect in the pre-framework

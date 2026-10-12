@@ -1,6 +1,6 @@
 # =============================================================================
 # qq-json.ps1 - JSON envelope serialization, exit codes, logging channel split.
-# Authority: G:\work\FRAMEWORK-DESIGN.md section 5
+# Authority: docs/FRAMEWORK-DESIGN.md section 5
 #
 # Channel contract (the reason this module exists):
 #   stdout = exactly one JSON object per invocation, machine parsed by the agent

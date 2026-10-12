@@ -1,6 +1,6 @@
 # =============================================================================
 # commands/accounts.ps1 - L0 account registry report.
-# Authority: G:\work\FRAMEWORK-DESIGN.md 4.2; G:\work\AGENT-MANUAL.md 4.3
+# Authority: docs/FRAMEWORK-DESIGN.md 4.2; docs/AGENT-MANUAL.md 4.3
 #
 # Answers "which account is actually usable right now" from the two halves the
 # framework keeps apart by design: the alias table in config.json accounts[] (what

@@ -22,7 +22,7 @@ public class TWin {
 '@
 if (-not ('TWin' -as [type])) { Add-Type -TypeDefinition $src -Language CSharp }
 
-$exe = 'D:\QQ\QQ.exe'
+$exe = 'C:\Program Files\Tencent\QQNT\QQ.exe'
 $existingPids = @(Get-Process QQ -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Id)
 
 Write-Host "=== BEFORE: QQ pids = $($existingPids -join ', ') ===" -ForegroundColor Cyan

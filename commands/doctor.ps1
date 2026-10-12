@@ -1,6 +1,6 @@
 # =============================================================================
 # commands/doctor.ps1 - L0 environment check.
-# Authority: G:\work\FRAMEWORK-DESIGN.md 4.2; G:\work\AGENT-MANUAL.md 3
+# Authority: docs/FRAMEWORK-DESIGN.md 4.2; docs/AGENT-MANUAL.md 3
 #
 # Read-only: enumerates QQ processes and windows and walks their UIA trees. It
 # never launches, restarts or stops a QQ process, never clicks, never focuses,

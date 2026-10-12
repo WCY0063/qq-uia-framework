@@ -1,6 +1,6 @@
 # 实现说明与实测记录（IMPLEMENTATION）
 
-> 本文件是 `G:\work\qq-uia-framework` 的 **实现侧说明**，不是设计权威。
+> 本文件是本仓库（qq-uia-framework）的 **实现侧说明**，不是设计权威。
 > 设计权威是 `FRAMEWORK-DESIGN.md`；agent 契约是 `AGENT-MANUAL.md`。
 > 两份权威文档在本目录内是**逐字节副本**（SHA-256 一致），改动前请改上游再同步。
 >

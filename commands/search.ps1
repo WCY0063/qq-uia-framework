@@ -1,6 +1,6 @@
 # =============================================================================
 # commands/search.ps1 - L1 global search.
-# Authority: G:\work\FRAMEWORK-DESIGN.md 4.2; G:\work\AGENT-MANUAL.md 5
+# Authority: docs/FRAMEWORK-DESIGN.md 4.2; docs/AGENT-MANUAL.md 5
 #
 # Side effects: focuses the window, takes focus in the search box and writes the
 # keyword. It does not open a conversation and does not change the selected chat.

@@ -4,8 +4,8 @@
 > v0.2 落地内容：账号体系（`accounts` 命令 + `-Account` 寻址）、配置 UI（`qq-config-ui.ps1`）、
 > search 重构（综合搜索面板 / 去重 / Escape 收尾）、缺陷修复（DPI 双重换算、限频时间戳文化 bug、
 > 选择器锚定、quiet-period 截断）。v0.1 的规划稿内容保留在 §9 路线图里作为对照。
-> 实测依据：`G:\deepseek-harness\workplace\qq-uia\README-QQNT-UIA.md`（QQNT 9.9.35-52892，Windows 11 / PowerShell 5.1）
-> 现有资产：`G:\deepseek-harness\workplace\qq-uia\scripts\` 下 13 个脚本
+> 实测依据：旧项目文档 `README-QQNT-UIA.md`（QQNT 9.9.35-52892，Windows 11 / PowerShell 5.1；该文档为历史资料，未收入本仓库）
+> 现有资产：13 个历史脚本，已封存于本仓库 `archive/`
 
 ---
 
@@ -200,7 +200,7 @@ PowerShell 5.1 序列化注意事项（`qq-json.ps1` 负责规避）：`ConvertT
 
 ```json
 {
-  "qqPath": "D:\\QQ",
+  "qqPath": "C:\\Program Files\\Tencent\\QQNT",
   "evidence": { "dir": "evidence", "keepLatestAliases": true, "writeAudit": true },
   "timeouts": { "defaultSec": 30, "switchHeaderMs": 10000, "afterTypeMs": 1000, "afterSendMs": 5000 },
   "dpi": { "mode": "auto", "scale": 1.5 },

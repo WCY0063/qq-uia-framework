@@ -3,11 +3,11 @@ param([int]$Port = 9222, [int]$WaitSec = 120)
 # Launch QQ bound to the already-logged-in account 123456789 (same arguments the running
 # instance uses, plus the debugging port) and wait until the CDP HTTP endpoint answers.
 $before = @(Get-Process QQ -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Id)
-$before | Set-Content 'G:\deepseek-harness\workplace\qq-uia\baseline-pids.txt'
+$before | Set-Content "$env:TEMP\qq-baseline-pids.txt"
 "baseline QQ pids ($($before.Count)): $($before -join ', ')"
 
 $appArgs = @(
-  'D:\QQ\versions\9.9.35-52892\resources\app\application.asar\background.js'
+  'C:\Program Files\Tencent\QQNT\versions\9.9.35-52892\resources\app\application.asar\background.js'
   '--from-multiple-login'
   '123456789'
   '""'
@@ -16,8 +16,8 @@ $appArgs = @(
   '--force-renderer-accessibility'
   '--remote-allow-origins=*'
 )
-"launching: D:\QQ\QQ.exe $($appArgs -join ' ')"
-$p = Start-Process -FilePath 'D:\QQ\QQ.exe' -ArgumentList $appArgs -PassThru
+"launching: C:\Program Files\Tencent\QQNT\QQ.exe $($appArgs -join ' ')"
+$p = Start-Process -FilePath 'C:\Program Files\Tencent\QQNT\QQ.exe' -ArgumentList $appArgs -PassThru
 "launcher pid: $($p.Id)"
 
 $reachable = $false
@@ -33,7 +33,7 @@ while ((Get-Date) -lt $deadline) {
 
 $after = @(Get-Process QQ -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Id)
 $new = @($after | Where-Object { $before -notcontains $_ })
-$new | Set-Content 'G:\deepseek-harness\workplace\qq-uia\test-pids.txt'
+$new | Set-Content "$env:TEMP\qq-test-pids.txt"
 "new QQ pids ($($new.Count)): $($new -join ', ')"
 "CDP reachable on $Port : $reachable"
 

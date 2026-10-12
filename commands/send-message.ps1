@@ -1,6 +1,6 @@
 # =============================================================================
 # commands/send-message.ps1 - L2 outward write (IRREVERSIBLE).
-# Authority: G:\work\FRAMEWORK-DESIGN.md 4.2, 4.3 and 6; G:\work\AGENT-MANUAL.md 4.1
+# Authority: docs/FRAMEWORK-DESIGN.md 4.2, 4.3 and 6; docs/AGENT-MANUAL.md 4.1
 #
 # This is the only command that changes state outside this machine. It sends ONE
 # text message, and every guard in lib\qq-guards.ps1 runs before the first

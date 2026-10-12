@@ -1,6 +1,6 @@
 # =============================================================================
 # qq-guards.ps1 - send guards (framework-level invariants).
-# Authority: G:\work\FRAMEWORK-DESIGN.md section 6
+# Authority: docs/FRAMEWORK-DESIGN.md section 6
 #
 # Every send path must pass every guard below. There is no switch that disables
 # them: a guard that can be turned off is a guard that will be off when it

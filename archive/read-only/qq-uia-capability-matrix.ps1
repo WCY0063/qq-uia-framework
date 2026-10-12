@@ -42,7 +42,7 @@ function Get-Patterns {
   return $got
 }
 
-$exe = 'D:\QQ\QQ.exe'
+$exe = 'C:\Program Files\Tencent\QQNT\QQ.exe'
 $existing = @(Get-Process QQ -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Id)
 Write-Host "Launching probe instance (--force-renderer-accessibility)..." -ForegroundColor Yellow
 [void](Start-Process -FilePath $exe -ArgumentList @('--force-renderer-accessibility') -PassThru)

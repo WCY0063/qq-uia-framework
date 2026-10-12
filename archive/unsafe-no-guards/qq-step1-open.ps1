@@ -72,7 +72,7 @@ if ($ExpectNick -ne '') {
 # --- screenshot ---
 Start-Sleep -Milliseconds 700
 $b = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
-$full = 'G:\deepseek-harness\workplace\qq-uia\verify-full.png'
+$full = "$env:TEMP\qq-verify-full.png"
 $bmp = New-Object System.Drawing.Bitmap($b.Width, $b.Height)
 $g = [System.Drawing.Graphics]::FromImage($bmp)
 $g.CopyFromScreen($b.X, $b.Y, 0, 0, $bmp.Size)
@@ -83,7 +83,7 @@ $rx = [Math]::Max(0, [int]($w.X / 1.5)); $ry = [Math]::Max(0, [int]($w.Y / 1.5))
 $rw = [int]($w.W / 1.5); $rh = [int]($w.H / 1.5)
 if ($rx + $rw -gt $b.Width) { $rw = $b.Width - $rx }
 if ($ry + $rh -gt $b.Height) { $rh = $b.Height - $ry }
-$crop = 'G:\deepseek-harness\workplace\qq-uia\verify-window.png'
+$crop = "$env:TEMP\qq-verify-window.png"
 $src = [System.Drawing.Image]::FromFile($full)
 $rect = New-Object System.Drawing.Rectangle($rx, $ry, $rw, $rh)
 $dst = New-Object System.Drawing.Bitmap($rect.Width, $rect.Height)

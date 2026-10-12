@@ -1,6 +1,6 @@
 # =============================================================================
 # commands/config-ui.ps1 - L0: open the graphical configuration window.
-# Authority: G:\work\FRAMEWORK-DESIGN.md (configuration); README.md section 8.
+# Authority: docs/FRAMEWORK-DESIGN.md (configuration); README.md section 8.
 #
 # This is the ONLY command in the framework that starts a process, and the process
 # it starts is the framework's own UI script, hosted by powershell.exe -STA. It

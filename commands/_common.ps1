@@ -1,6 +1,6 @@
 # =============================================================================
 # commands/_common.ps1 - shared command helpers (dot-sourced by qq-uia.ps1).
-# Authority: G:\work\FRAMEWORK-DESIGN.md 4.3
+# Authority: docs/FRAMEWORK-DESIGN.md 4.3
 #
 # Every window-scoped command needs the same preamble: resolve the instance (by
 # -SenderPid, by -Account, or by the configured defaultAccount), refuse to proceed

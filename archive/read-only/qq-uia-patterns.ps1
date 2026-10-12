@@ -23,7 +23,7 @@ $launched = @()
 if ($ForceA11y -and $TargetPidToUse -eq 0) {
   $existing = @(Get-Process QQ -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Id)
   Write-Host "launching QQ with --force-renderer-accessibility" -ForegroundColor Yellow
-  [void](Start-Process -FilePath 'D:\QQ\QQ.exe' -ArgumentList @('--force-renderer-accessibility') -PassThru)
+  [void](Start-Process -FilePath 'C:\Program Files\Tencent\QQNT\QQ.exe' -ArgumentList @('--force-renderer-accessibility') -PassThru)
   Start-Sleep -Seconds $WaitSec
   $launched = @(Get-Process QQ -ErrorAction SilentlyContinue | Where-Object { $existing -notcontains $_.Id } | Select-Object -ExpandProperty Id)
   Write-Host "test pids: $($launched -join ', ')"

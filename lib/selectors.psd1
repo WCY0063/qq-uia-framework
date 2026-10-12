@@ -1,7 +1,7 @@
 # =============================================================================
 # selectors.psd1 - QQ control selector registry (single source of truth).
-# Authority: G:\work\FRAMEWORK-DESIGN.md section 7
-# Fact basis: G:\deepseek-harness\workplace\qq-uia\README-QQNT-UIA.md section 3
+# Authority: docs/FRAMEWORK-DESIGN.md section 7
+# Fact basis: README-QQNT-UIA.md section 3 (legacy doc, not in this repo)
 # Verified against: QQNT 9.9.35-52892
 #
 # When a QQ upgrade moves a class name, edit ONLY this file. `doctor` probes

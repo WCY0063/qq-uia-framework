@@ -1,6 +1,6 @@
 # =============================================================================
 # qq-uia.ps1 - the ONLY entry point of the QQ UIA automation framework.
-# Authority: G:\work\FRAMEWORK-DESIGN.md sections 4 and 5
+# Authority: docs/FRAMEWORK-DESIGN.md sections 4 and 5
 #
 #   powershell -NoProfile -ExecutionPolicy Bypass -File qq-uia.ps1 <command> [params]
 #
@@ -439,7 +439,7 @@ function Write-QQVersion {
   if ($null -ne $sel) {
     Write-QQLog -Text ("selectors {0} verified on {1}" -f $sel.Version, $sel.VerifiedOn)
   }
-  Write-QQLog -Text 'authority: G:\work\FRAMEWORK-DESIGN.md and G:\work\AGENT-MANUAL.md'
+  Write-QQLog -Text 'authority: docs/FRAMEWORK-DESIGN.md and docs/AGENT-MANUAL.md'
 }
 
 # ---------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 # =============================================================================
 # commands/read-chat.ps1 - L1 open a conversation and read its messages.
-# Authority: G:\work\FRAMEWORK-DESIGN.md 4.2; G:\work\AGENT-MANUAL.md 4.2
+# Authority: docs/FRAMEWORK-DESIGN.md 4.2; docs/AGENT-MANUAL.md 4.2
 #
 # Side effects: switches the selected conversation and captures one screenshot as
 # evidence. It types nothing and sends nothing.

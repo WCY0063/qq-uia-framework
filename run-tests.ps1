@@ -1,6 +1,6 @@
 # =============================================================================
 # run-tests.ps1 - framework self-check. Run it after any edit.
-# Authority: G:\work\FRAMEWORK-DESIGN.md 5 and 9
+# Authority: docs/FRAMEWORK-DESIGN.md 5 and 9
 #
 # Two test classes:
 #   static  - no QQ needed and no UI action (nothing is clicked, focused, typed or

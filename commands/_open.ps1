@@ -1,7 +1,7 @@
 # =============================================================================
 # commands/_open.ps1 - conversation opening strategy, shared by read-chat and
 # open-chat.
-# Authority: G:\work\FRAMEWORK-DESIGN.md 4.2 and 6.4
+# Authority: docs/FRAMEWORK-DESIGN.md 4.2 and 6.4
 #
 # Opening a conversation is the step that decides which chat a later send reaches,
 # so it lives in exactly one implementation that both commands use. Two copies

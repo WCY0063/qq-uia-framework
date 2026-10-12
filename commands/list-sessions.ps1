@@ -1,6 +1,6 @@
 # =============================================================================
 # commands/list-sessions.ps1 - L0 conversation list of one instance.
-# Authority: G:\work\FRAMEWORK-DESIGN.md 4.2
+# Authority: docs/FRAMEWORK-DESIGN.md 4.2
 #
 # Read-only: reads the rendered conversation list of an instance that was named
 # by pid. It never launches, restarts or stops a QQ process, never clicks, never

@@ -1,6 +1,6 @@
 # =============================================================================
 # commands/open-chat.ps1 - L1 stage one of the send SOP.
-# Authority: G:\work\FRAMEWORK-DESIGN.md 4.2 and 6.4; G:\work\AGENT-MANUAL.md 4.1
+# Authority: docs/FRAMEWORK-DESIGN.md 4.2 and 6.4; docs/AGENT-MANUAL.md 4.1
 #
 # This command TYPES NOTHING AND SENDS NOTHING. Its whole purpose is to make the
 # destination verifiable before any send: switch the conversation, prove the

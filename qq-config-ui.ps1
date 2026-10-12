@@ -1,6 +1,6 @@
 # =============================================================================
 # qq-config-ui.ps1 - the framework's graphical configuration surface (WPF).
-# Authority: G:\work\FRAMEWORK-DESIGN.md (configuration); README.md section 8.
+# Authority: docs/FRAMEWORK-DESIGN.md (configuration); README.md section 8.
 #
 # Why it exists: config.json is the only configuration, and until now every edit
 # was a hand-written JSON patch with no feedback. This window shows the RUNNING QQ
@@ -48,7 +48,7 @@ if ([string]::IsNullOrEmpty($script:Root)) { $script:Root = Split-Path -Parent $
 $script:XamlPath    = Join-Path $script:Root 'ui\config-ui.xaml'
 $script:ConfigPath  = Join-Path $script:Root 'config.json'
 $script:Dispatcher  = Join-Path $script:Root 'qq-uia.ps1'
-$script:DefaultQQPath = 'D:\QQ\QQ.exe'
+$script:DefaultQQPath = 'C:\Program Files\Tencent\QQNT\QQ.exe'
 
 # Every control the script touches. run-tests.ps1 reads THIS list and asserts
 # ui/config-ui.xaml can resolve all of it, so a rename on either side is caught

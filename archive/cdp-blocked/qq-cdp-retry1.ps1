@@ -25,7 +25,7 @@ foreach ($set in $argSets) {
   Write-Host "`n============================== $($set.Label) ==============================" -ForegroundColor Magenta
   Write-Host ("args: {0}" -f ($set.Args -join ' '))
   $t0 = Get-Date
-  $p = Start-Process -FilePath 'D:\QQ\QQ.exe' -ArgumentList $set.Args -PassThru
+  $p = Start-Process -FilePath 'C:\Program Files\Tencent\QQNT\QQ.exe' -ArgumentList $set.Args -PassThru
   Start-Sleep -Seconds 35
   $new = @(Get-Process QQ -ErrorAction SilentlyContinue | Where-Object { $before -notcontains $_.Id } | Select-Object -ExpandProperty Id)
   Write-Host ("new pids: {0}" -f ($new -join ', '))

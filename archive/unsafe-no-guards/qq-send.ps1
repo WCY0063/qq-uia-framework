@@ -6,7 +6,7 @@ param(
   [string]$ExpectNick = '',      # nickname to expect on the opened chat header
   [switch]$NoSend
 )
-. 'G:\deepseek-harness\workplace\qq-uia\qq-lib.ps1'
+. "$PSScriptRoot\..\read-only\qq-lib.ps1"
 Add-Type -AssemblyName System.Windows.Forms
 
 if ($Message -eq '') { $Message = [string]([char]0x65E9 + [char]0x4E0A + [char]0x597D + [char]0xFF0C + [char]0x4E3B + [char]0x4EBA + [char]0x3002) }  # morning, master.

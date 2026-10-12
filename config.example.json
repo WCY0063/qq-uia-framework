@@ -45,5 +45,5 @@
     "requireAccountMatch": false,
     "minSendIntervalMs": 10000
   },
-  "qqPath": "D:\\QQ\\QQ.exe"
+  "qqPath": "C:\\Program Files\\Tencent\\QQNT\\QQ.exe"
 }
